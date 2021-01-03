@@ -5,7 +5,7 @@
 - Problem : K번 곱하기
 - 문제유형 : 구현(Implement), 수학
 - 난이도 : Level 1
-- code : [K번 곱하기.py]("https://kdt-gitlab.elice.io/yjk5309/algorithm-study-02/-/blob/master/2주차/2021-01-03/정소원/K번%20곱하기.py")
+- code : [K번 곱하기.py](https://kdt-gitlab.elice.io/yjk5309/algorithm-study-02/-/blob/master/2주차/2021-01-03/정소원/K번%20곱하기.py)
 
 ## 풀이방법
 
