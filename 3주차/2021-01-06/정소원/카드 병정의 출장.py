@@ -8,7 +8,7 @@ def combination(n, m, cur):
     for i in range(1, n+1):
         if len(cur) == 0:
             combination(n, m, cur+[str(i)])
-        elif not i in cur and max(cur) < str(i):
+        elif max(cur) < str(i):
             combination(n, m, cur+[str(i)])
 
 

@@ -6,8 +6,7 @@ def combination(n, m, cur):
         print(' '.join(cur))
         return
     for i in range(1, n+1):
-        if not i in cur:
-            combination(n, m, cur+[str(i)])
+        combination(n, m, cur+[str(i)])
 
 
 combination(N, M, [])
