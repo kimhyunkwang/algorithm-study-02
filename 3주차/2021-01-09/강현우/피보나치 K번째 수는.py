@@ -18,6 +18,5 @@ sys.setrecursionlimit(10**7)
 
 fib3 = lambda n, a=0, b=1 : a if n<=0 else fib3(n-1,b, a+b)
 
-
 K = int(input())
 print(fib3(K))
