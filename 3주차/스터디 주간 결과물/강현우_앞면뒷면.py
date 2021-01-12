@@ -1,5 +1,4 @@
 def yaksu(num):
-    count = 0 
     yaks = []
     for a in range(1, num+1): 
         if num % a == 0:
