@@ -1,3 +1,4 @@
+# test case 2, 4 실패
 n, k = map(int, input().split())
 
 if n >= k:
@@ -28,7 +29,7 @@ else:
         time += 1
         
         # 경찰과 범인의 위치가 같아지면 종료
-        if n == k
+        if n == k:
             break
 
     print(time)
