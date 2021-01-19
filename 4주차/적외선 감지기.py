@@ -3,17 +3,17 @@ dodo, cater, ches = map(int, input().split())
 
 dodo_data, cater_data, ches_data = 0,0,0
 
-if (dodo % (A+B))-1 < A:
+if (dodo % (A+B)) < A:
     dodo_data += 1
-if (dodo % (C+D))-1 < C:
+if (dodo % (C+D)1 < C:
     dodo_data += 1
-if (cater % (A+B))-1 < A:
+if (cater % (A+B)) < A:
     cater_data += 1
-if (cater % (C+D))-1 < C:
+if (cater % (C+D)) < C:
     cater_data += 1
-if (ches % (A+B))-1 < A:
+if (ches % (A+B)) < A:
     ches_data += 1
-if (ches % (C+D))-1 < C:
+if (ches % (C+D)) < C:
     ches_data += 1
     
 print(dodo_data)
