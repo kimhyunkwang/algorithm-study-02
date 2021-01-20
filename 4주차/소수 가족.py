@@ -14,7 +14,7 @@ def prime(n):
     return True
 
 
-def countDemicalFamily(a, b):
+def countPrimeFamily(a, b):
     res, k, n = 0, 2, int(b**0.5)
     primes = [False]*(n+1)
     while b**(1/k) >= 2:
@@ -31,5 +31,5 @@ def countDemicalFamily(a, b):
     return res
 
 
-print(countDemicalFamily(A, B))
+print(countPrimeFamily(A, B))
 # Q. 시간복잡도를 줄일 수 있는 다른 풀이를 알고 싶습니다!
