@@ -43,7 +43,7 @@ def bfs(cur, container):
 
 
 com = list(combinations(fire, M))
-res = float('inf')
+res = float("inf")
 
 for cur in com:
     box = deepcopy(container)
@@ -51,7 +51,7 @@ for cur in com:
     if ct != -1:
         res = min(res, ct)
 
-if res == float('inf'):
+if res == float("inf"):
     print(-1)
 else:
     print(res)
