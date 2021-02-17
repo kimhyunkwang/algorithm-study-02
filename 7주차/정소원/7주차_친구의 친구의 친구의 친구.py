@@ -33,6 +33,8 @@ e, length = dfs(0, 1, 1, 0)
 if length == 5:
     print(1)
 else:
+    visited = [False] * N
+    visited[e] = True
     e, length = dfs(e, 1, 1, e)
     if length == 5:
         print(1)
