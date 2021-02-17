@@ -13,7 +13,7 @@ def bfs(v):
         if v == G:
             finished = True
             break
-        up, down = v + U, v - D
+        up, down = v + U, v - D  # 다음 정점이 될 수 있는 up, down
         if up > 0 and up <= N and not visited[up]:
             q.append((up, cnt + 1))
             visited[up] = True

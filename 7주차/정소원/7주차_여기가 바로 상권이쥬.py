@@ -1,3 +1,4 @@
+# 컴포넌트의 개수와 해당 컴포넌트 안에 있는 정점을 세는 문제
 from collections import deque
 
 N = int(input())
