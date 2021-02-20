@@ -9,7 +9,7 @@ for i in range(n):
     if i == 0:
         area.append(1)
     else:
-        value = (side**2) * 0.75 + area[i-1]
+        value = (side ** 2) * 0.75 + area[i - 1]
         area.append(round(value, 1))
 
     side = side * sqrt(2)
