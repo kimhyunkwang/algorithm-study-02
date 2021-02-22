@@ -20,11 +20,11 @@ print(max(cache))
 # 아래는 모든 케이스 통과
 n = int(input())
 k = list(map(int, input().split()))
-cache = [-1] * n
+cache = [-1] * (len(k))
 
 for i in reversed(range(len(k))):
     cur, cache[i] = k[i], k[i]
-    for j in range(i + 1, n):
+    for j in range(i + 1, len(k)):
         if cache[j] != -1:
             if cur + cache[j] > cache[i]:
                 cache[i] = cur + cache[j]
