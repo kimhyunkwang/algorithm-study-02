@@ -47,7 +47,7 @@ def bfs(starts, box):
 cases = list(combinations(fires, m))
 res = float("inf")
 for i in range(len(cases)):
-    box = deepcopy(container)
+    box = deepcopy(container)  # 가연성 물질을 선택하는 케이스 각각에 대한 지도
     for x, y in cases[i]:
         box[x][y] = 3
     res = min(res, bfs(cases[i], box))

@@ -13,7 +13,7 @@ def getMaxPatient(x, y):
             getMaxPatient(x + 1, y),
             getMaxPatient(x, y + 1),
             getMaxPatient(x + 1, y + 1),
-        )
+        )  # 이동 가능한 좌표 경우에서 최대의 환자를 데리고 가는 경우를 구한다.
         + matrix[x][y]
     )
     return cache[x][y]
