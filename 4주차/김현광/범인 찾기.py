@@ -1,35 +1,24 @@
-# test case 2, 4 실패
+from collections import deque
+
 n, k = map(int, input().split())
 
 if n >= k:
     print(n-k)
 else:
-    time = 0
-    distance = []
+    que = deque()
+    que.append((n, 0))
+    visited = [0 for _ in range(100001)]
 
-    while (True):
-        three_times = 3 * n
-        minus = n - 1
-        plus = n + 1
+    while (que):
+        cur, time = que.popleft()
         
-        # 이동했다 가정했을 때 범인과의 거리
-        distance = [abs(k - three_times), abs(k - minus), abs(k - plus)]
+        nxt = [cur * 3, cur + 1, cur - 1]
         
-        # 범인과 거리가 가장 가까운 항목의 인덱스
-        index = distance.index(min(distance))
-
-        if index == 0:
-            n = three_times # 경찰이 three_times 방법을 사용하여 위치 이동
-        elif index == 1:
-            n = minus # 경찰이 minus 방법 사용하여 위치 이동
-        else:
-            n = plus # 경찰이 plus 방법 사용하여 위치 이동
-            
-        # 한 번 이동할 때마다 1초 증가
-        time += 1
-        
-        # 경찰과 범인의 위치가 같아지면 종료
-        if n == k:
+        if k in nxt:
+            print(time + 1)
             break
 
-    print(time)
+        for i in range(3):
+            if 1 <= nxt[i] <= 100000 and visited[nxt[i]] == 0:
+                visited[nxt[i]] = 1
+                que.append((nxt[i], time + 1))
